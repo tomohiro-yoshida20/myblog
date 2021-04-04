@@ -4,15 +4,14 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Post extends Model
+class Comment extends Model
 {
     //
     protected $fillable = [
-        'title',
         'body'
     ];
 
-    public function comments() {
-        return $this->hasMany('App\Commnet');
+    public function post() {
+        return $this->belongsTo('App\Post');
     }
 }

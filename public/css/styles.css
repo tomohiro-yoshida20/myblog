@@ -39,3 +39,12 @@ textarea {
   font-size: 12px;
   color: tomato;
 }
+
+.edit, .del {
+  font-size: 12px;
+}
+
+h2 {
+  font-size: 14px;
+  padding-top: 25px;
+}
